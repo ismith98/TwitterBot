@@ -22,8 +22,8 @@ function tweetIt() {
 
 //Call tweetIt at 11:11pm
 var now = new Date();
-//Heroku server is one hour and fifty 3 miutes fast
-var difference = new Date(now.getFullYear(), now.getMonth() ,now.getDate(), 20, 00, 05, 0) - now;
+//Heroku server is two hours fast
+var difference = new Date(now.getFullYear(), now.getMonth() ,now.getDate(), 20, 05, 05, 0) - now;
 if(difference < 0) {
 	difference += 86400000;	//It's after 11:11pm so do it tommorow
 }
