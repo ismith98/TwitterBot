@@ -26,6 +26,7 @@ var difference = new Date(now.getFullYear(), now.getMonth() ,now.getDate(), 23, 
 if(difference < 0) {
 	difference += 86400000;	//It's after 11:11pm so do it tommorow
 }
+console.log(now);
 console.log(difference);
 setTimeout(tweetIt, difference);
 
