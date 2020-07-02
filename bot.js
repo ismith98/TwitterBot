@@ -23,8 +23,8 @@ function tweetIt() {
 //Call tweetIt at 11:11pm
 var now = new Date();
 //Subtract the current time from the time I want the bot to tweet (11:11pm)
-//The Heroku server is two hours fast so set the time I want
-var difference = new Date(now.getFullYear(), now.getMonth() ,now.getDate(), 01, 11, 05, 0) - now;
+//The Heroku server is 4 hours fast so set the time I want
+var difference = new Date(now.getFullYear(), now.getMonth() ,now.getDate(), 03, 11, 05, 0) - now;
 if(difference < 0) {
 	difference += 86400000;	//It's after 11:11pm so do it tommorow
 }
